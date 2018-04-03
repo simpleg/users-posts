@@ -9,11 +9,12 @@
 #import "UsersTableViewCell.h"
 
 @interface UsersTableViewCell()
-@property (weak, nonatomic) IBOutlet UIView *avatar;
+@property (weak, nonatomic) IBOutlet UIImageView *avatar;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *emailAddress;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumber;
 @property (weak, nonatomic) IBOutlet UILabel *username;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *avatarDownloadActivityIndicator;
 
 @end
 @implementation UsersTableViewCell
@@ -32,6 +33,12 @@
     _username.text = _user.username;
     _emailAddress.text = _user.email;
     _phoneNumber.text = _user.phone;
+    if(!_user.avatarData){
+        [_avatarDownloadActivityIndicator startAnimating];
+    } else {
+        _avatar.image = [UIImage imageWithData:_user.avatarData];
+        [_avatarDownloadActivityIndicator stopAnimating];
+    }
     
 }
 

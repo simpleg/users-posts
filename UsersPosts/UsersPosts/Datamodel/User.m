@@ -19,6 +19,7 @@
 @property (nonatomic, readwrite, strong) NSString *website;
 @property (nonatomic, readwrite, strong) Company *company;
 @property (nonatomic, readwrite, strong) NSMutableSet <Post *> *userPosts;
+
 @end
 
 @implementation User
@@ -53,5 +54,8 @@
 }
 -(void) addPost:(Post *)post {
     [_userPosts addObject:post];
+}
+-(void) addAvatarData:(NSData *) data {
+    _avatarData = [NSData dataWithData:data];
 }
 @end

@@ -9,4 +9,5 @@
 
 @interface User (PrivateMethods)
 -(void) addPost:(Post *) post;
+-(void) addAvatarData:(NSData *) data;
 @end

@@ -10,9 +10,11 @@
 #import "User.h"
 typedef void (^UsersManagerFetchUsersCompletionHandler)(NSArray <User*> *users, NSError *error);
 typedef void (^UsersManagerFetchPostsForUserCompletionHandler)(User *user, NSArray <Post*> *posts, NSError *error);
+typedef void (^UsersManagerFetchAvatarForUserCompletionHandler)(User *user, NSData *avatarData, NSError *error);
 
 @interface UsersManager : NSObject
 @property (nonatomic, readonly) NSArray <User *>* users;
 -(void) fetchUsersWithCompletionHandler:(UsersManagerFetchUsersCompletionHandler) completionHandler;
+-(void) fetchAvatarForUser:(User *) user completionHandler:(UsersManagerFetchAvatarForUserCompletionHandler) completionHandler;
 -(void) fetchPostsForUser:(User *) user completionHandler:(UsersManagerFetchPostsForUserCompletionHandler) completionHandler;
 @end

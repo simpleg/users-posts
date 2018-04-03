@@ -57,8 +57,38 @@
     }];
 }
 
+-(void) fetchAvatarForUser:(User *) user completionHandler:(UsersManagerFetchAvatarForUserCompletionHandler) completionHandler {
+    __weak typeof(user) weakUser = user;
+    [_networkManager performGetRequestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://jsonplaceholder.typicode.com/photos?userID=%@&id=%@",user.userID, user.userID]] completionBlock:^(NSData *receivedData, NSError *error, NSURLResponse *response) {
+        NSLog(@"Fetch avatar info for user answer %@", error);
+        if(error){
+            NSLog(@"Error while fetching avatar info for users %@", error);
+            if(completionHandler)
+                completionHandler(weakUser , nil, error);
+            return;
+        }
+        
+        NSArray *avatarInfos = [receivedData objectFromJSONData];
+        for (NSDictionary *avatarInfo in avatarInfos) {
+            NSString *avatarURL = [avatarInfo objectForKey:@"thumbnailUrl"];
+            // given url are not in HTTPS, avoid disabling ats policy
+            NSURL *url = [NSURL URLWithString:[avatarURL stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"]];
+            [_networkManager performGetRequestWithURL:url completionBlock:^(NSData *receivedData, NSError *error, NSURLResponse *response) {
+                if(error){
+                    NSLog(@"Error while fetching avatar for users %@", error);
+                    if(completionHandler)
+                        completionHandler(weakUser , nil, error);
+                    return;
+                }
+                [weakUser addAvatarData:receivedData];
+                if(completionHandler)
+                    completionHandler(weakUser, weakUser.avatarData, error);
+            }];
+        }
+    }];
+}
+
 -(void) fetchPostsForUser:(User *) user completionHandler:(UsersManagerFetchPostsForUserCompletionHandler) completionHandler {
-    
     [_networkManager performGetRequestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://jsonplaceholder.typicode.com/posts?userId=%@", user.userID]] completionBlock:^(NSData *receivedData, NSError *error, NSURLResponse *response) {
         NSLog(@"Fetch posts for user answer %@", error);
         if(error){

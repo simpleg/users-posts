@@ -53,6 +53,18 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    User *theUser = [_usersManager.users objectAtIndex:indexPath.row];
+    if(!theUser.avatarData){
+       [_usersManager fetchAvatarForUser:theUser completionHandler:^(User *user, NSData *avatarData, NSError *error) {
+           dispatch_async(dispatch_get_main_queue(), ^{
+               UsersTableViewCell *aCell = (UsersTableViewCell *) cell;
+               aCell.user = user;
+           });
+       }];
+    }
+}
+
 #pragma mark - Navigation
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(nullable id)sender {
     if([identifier isEqualToString:@"showPostSegueID"]){
