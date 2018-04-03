@@ -10,4 +10,5 @@
 
 @interface NSData (JSON)
 - (id)objectFromJSONData;
++(NSData *) dataFromObject:(id) object;
 @end

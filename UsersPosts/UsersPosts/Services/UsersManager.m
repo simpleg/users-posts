@@ -59,7 +59,7 @@
 
 -(void) fetchAvatarForUser:(User *) user completionHandler:(UsersManagerFetchAvatarForUserCompletionHandler) completionHandler {
     __weak typeof(user) weakUser = user;
-    [_networkManager performGetRequestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://jsonplaceholder.typicode.com/photos?userID=%@&id=%@",user.userID, user.userID]] completionBlock:^(NSData *receivedData, NSError *error, NSURLResponse *response) {
+    [_networkManager performGetRequestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://jsonplaceholder.typicode.com/photos?id=%@", user.userID]] completionBlock:^(NSData *receivedData, NSError *error, NSURLResponse *response) {
         NSLog(@"Fetch avatar info for user answer %@", error);
         if(error){
             NSLog(@"Error while fetching avatar info for users %@", error);

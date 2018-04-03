@@ -7,24 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSData+JSON.h"
 
 @interface UsersPostsUITests : XCTestCase
-
+@property (nonatomic, strong) XCUIApplication *app;
 @end
 
 @implementation UsersPostsUITests
 
 - (void)setUp {
     [super setUp];
-    
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-    
-    // In UI tests it is usually best to stop immediately when a failure occurs.
     self.continueAfterFailure = NO;
-    // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-    [[[XCUIApplication alloc] init] launch];
-    
-    // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    _app = [[XCUIApplication alloc] init];
+    [_app launch];
 }
 
 - (void)tearDown {
@@ -32,9 +27,46 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testAllUsersExists {
+    XCTAssertEqual(_app.tables.cells.count, 10);
+    
+    NSData *usersData = [self dataForFileName:@"users"];
+    NSArray *allUsers = [usersData objectFromJSONData];
+    for (NSDictionary *aUser in allUsers) {
+        NSString *name = [aUser objectForKey:@"name"];
+        NSString *userName = [aUser objectForKey:@"username"];
+        NSString *email = [aUser objectForKey:@"email"];
+        NSString *phone = [aUser objectForKey:@"phone"];
+        XCUIElementQuery *cell = [_app.tables.cells containingType:XCUIElementTypeStaticText identifier:name];
+        XCTAssertNotNil(cell);
+        XCTAssertEqualObjects(cell.staticTexts[@"name"].value, name);
+        XCTAssertEqualObjects(cell.staticTexts[@"username"].value, userName);
+        XCTAssertEqualObjects(cell.staticTexts[@"email"].value, email);
+        XCTAssertEqualObjects(cell.staticTexts[@"phone"].value, phone);
+    }
+}
+
+-(void) testOpenPostsOfUserLeanneGraham {
+    XCUIElementQuery *tablesQuery = _app.tables;
+    XCUIElementQuery *childrens = [tablesQuery childrenMatchingType:XCUIElementTypeCell];
+    XCUIElementQuery *element = [childrens containingType:XCUIElementTypeStaticText identifier:@"name"];
+    [element.staticTexts[@"Leanne Graham"] tap];
+    
+    
+    
+    
+//
+//    XCUIElementQuery *tablesQuery = [[XCUIApplication alloc] init].tables;
+//    [[[tablesQuery childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:4].staticTexts[@"phoneNumber"] swipeUp];
+//    [[[tablesQuery childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:9].staticTexts[@"name"] tap];
+    
+    
+}
+
+
+-(NSData *) dataForFileName:(NSString *) fileName {
+    NSString *filePath = [[NSBundle bundleForClass:self.class] pathForResource:fileName ofType:@"json"];
+    return [NSData dataWithContentsOfFile:filePath];
 }
 
 @end

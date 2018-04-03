@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027791852073FC8A006E8D46 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA702073E62300250668 /* users.json */; };
+		027791862073FC8D006E8D46 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA742073E65100250668 /* posts.json */; };
+		027791872073FCC2006E8D46 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA542073BACD00250668 /* NSData+JSON.m */; };
 		02C9AA0D2073B4DC00250668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA0C2073B4DC00250668 /* AppDelegate.m */; };
 		02C9AA132073B4DC00250668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA112073B4DC00250668 /* Main.storyboard */; };
 		02C9AA152073B4DC00250668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA142073B4DC00250668 /* Assets.xcassets */; };
 		02C9AA182073B4DC00250668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA162073B4DC00250668 /* LaunchScreen.storyboard */; };
 		02C9AA1B2073B4DC00250668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA1A2073B4DC00250668 /* main.m */; };
-		02C9AA252073B4DC00250668 /* UsersPostsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA242073B4DC00250668 /* UsersPostsTests.m */; };
 		02C9AA302073B4DC00250668 /* UsersPostsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA2F2073B4DC00250668 /* UsersPostsUITests.m */; };
 		02C9AA402073B5F100250668 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA3F2073B5F100250668 /* User.m */; };
 		02C9AA432073B66200250668 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA422073B66200250668 /* Address.m */; };
@@ -25,6 +27,18 @@
 		02C9AA622073D1EF00250668 /* UserPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA612073D1EF00250668 /* UserPostsTableViewController.m */; };
 		02C9AA652073D31D00250668 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA642073D31D00250668 /* Post.m */; };
 		02C9AA682073D5B700250668 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA672073D5B700250668 /* PostTableViewCell.m */; };
+		02C9AA6D2073E33A00250668 /* UsersManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA6C2073E33A00250668 /* UsersManagerTests.m */; };
+		02C9AA722073E62300250668 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA702073E62300250668 /* users.json */; };
+		02C9AA752073E65200250668 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA742073E65100250668 /* posts.json */; };
+		02C9AA772073E67C00250668 /* photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA762073E67C00250668 /* photos.json */; };
+		02C9AA7C2073E6B200250668 /* NetworkManager+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA7B2073E6B200250668 /* NetworkManager+Swizzling.m */; };
+		02C9AA7D2073E9F900250668 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA572073BB9700250668 /* NetworkManager.m */; };
+		02C9AA7E2073EA0500250668 /* UsersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA492073B92C00250668 /* UsersManager.m */; };
+		02C9AA7F2073EA5A00250668 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA3F2073B5F100250668 /* User.m */; };
+		02C9AA802073EA5A00250668 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA422073B66200250668 /* Address.m */; };
+		02C9AA812073EA5A00250668 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA452073B6CD00250668 /* Company.m */; };
+		02C9AA822073EA5A00250668 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA642073D31D00250668 /* Post.m */; };
+		02C9AA832073EA5D00250668 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA542073BACD00250668 /* NSData+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +68,6 @@
 		02C9AA192073B4DC00250668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C9AA1A2073B4DC00250668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02C9AA202073B4DC00250668 /* UsersPostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersPostsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02C9AA242073B4DC00250668 /* UsersPostsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersPostsTests.m; sourceTree = "<group>"; };
 		02C9AA262073B4DC00250668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C9AA2B2073B4DC00250668 /* UsersPostsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersPostsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9AA2F2073B4DC00250668 /* UsersPostsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersPostsUITests.m; sourceTree = "<group>"; };
@@ -82,6 +95,11 @@
 		02C9AA662073D5B700250668 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
 		02C9AA672073D5B700250668 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
 		02C9AA6B2073D8BF00250668 /* User+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+Internal.h"; sourceTree = "<group>"; };
+		02C9AA6C2073E33A00250668 /* UsersManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersManagerTests.m; sourceTree = "<group>"; };
+		02C9AA702073E62300250668 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		02C9AA742073E65100250668 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		02C9AA762073E67C00250668 /* photos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photos.json; sourceTree = "<group>"; };
+		02C9AA7B2073E6B200250668 /* NetworkManager+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+Swizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +167,9 @@
 		02C9AA232073B4DC00250668 /* UsersPostsTests */ = {
 			isa = PBXGroup;
 			children = (
-				02C9AA242073B4DC00250668 /* UsersPostsTests.m */,
+				02C9AA792073E69400250668 /* NetworkManagerMock */,
+				02C9AA782073E68500250668 /* Resources */,
+				02C9AA6C2073E33A00250668 /* UsersManagerTests.m */,
 				02C9AA262073B4DC00250668 /* Info.plist */,
 			);
 			path = UsersPostsTests;
@@ -214,6 +234,24 @@
 				02C9AA672073D5B700250668 /* PostTableViewCell.m */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		02C9AA782073E68500250668 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02C9AA762073E67C00250668 /* photos.json */,
+				02C9AA742073E65100250668 /* posts.json */,
+				02C9AA702073E62300250668 /* users.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02C9AA792073E69400250668 /* NetworkManagerMock */ = {
+			isa = PBXGroup;
+			children = (
+				02C9AA7B2073E6B200250668 /* NetworkManager+Swizzling.m */,
+			);
+			path = NetworkManagerMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +326,6 @@
 					02C9AA1F2073B4DC00250668 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 02C9AA072073B4DC00250668;
 					};
 					02C9AA2A2073B4DC00250668 = {
 						CreatedOnToolsVersion = 9.2;
@@ -332,6 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C9AA772073E67C00250668 /* photos.json in Resources */,
+				02C9AA722073E62300250668 /* users.json in Resources */,
+				02C9AA752073E65200250668 /* posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +379,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027791852073FC8A006E8D46 /* users.json in Resources */,
+				027791862073FC8D006E8D46 /* posts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +411,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C9AA252073B4DC00250668 /* UsersPostsTests.m in Sources */,
+				02C9AA802073EA5A00250668 /* Address.m in Sources */,
+				02C9AA7F2073EA5A00250668 /* User.m in Sources */,
+				02C9AA7C2073E6B200250668 /* NetworkManager+Swizzling.m in Sources */,
+				02C9AA7D2073E9F900250668 /* NetworkManager.m in Sources */,
+				02C9AA7E2073EA0500250668 /* UsersManager.m in Sources */,
+				02C9AA6D2073E33A00250668 /* UsersManagerTests.m in Sources */,
+				02C9AA812073EA5A00250668 /* Company.m in Sources */,
+				02C9AA832073EA5D00250668 /* NSData+JSON.m in Sources */,
+				02C9AA822073EA5A00250668 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027791872073FCC2006E8D46 /* NSData+JSON.m in Sources */,
 				02C9AA302073B4DC00250668 /* UsersPostsUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +602,6 @@
 		02C9AA382073B4DC00250668 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q559R52U6;
 				INFOPLIST_FILE = UsersPostsTests/Info.plist;
@@ -559,14 +609,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.simpleg.UsersPostsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsersPosts.app/UsersPosts";
 			};
 			name = Debug;
 		};
 		02C9AA392073B4DC00250668 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q559R52U6;
 				INFOPLIST_FILE = UsersPostsTests/Info.plist;
@@ -574,7 +622,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.simpleg.UsersPostsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsersPosts.app/UsersPosts";
 			};
 			name = Release;
 		};

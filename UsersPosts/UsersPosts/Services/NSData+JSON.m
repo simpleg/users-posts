@@ -10,10 +10,15 @@
 
 @implementation NSData (JSON)
 
-- (id)objectFromJSONData {
+-(id)objectFromJSONData {
     NSError *error = nil;
     id object = [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingAllowFragments error:&error];
     return object;
 }
 
++(NSData *) dataFromObject:(id) object {
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:&error];
+    return jsonData;
+}
 @end
