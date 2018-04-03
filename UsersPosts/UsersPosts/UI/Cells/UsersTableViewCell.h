@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UsersTableViewCell.h
 //  UsersPosts
 //
 //  Created by Jerome Heymonet on 03/04/2018.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface ViewController : UIViewController
-
-
+@interface UsersTableViewCell : UITableViewCell
+@property (nonatomic, strong) User *user;
 @end
-

@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		02C9AA0D2073B4DC00250668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA0C2073B4DC00250668 /* AppDelegate.m */; };
-		02C9AA102073B4DC00250668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA0F2073B4DC00250668 /* ViewController.m */; };
 		02C9AA132073B4DC00250668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA112073B4DC00250668 /* Main.storyboard */; };
 		02C9AA152073B4DC00250668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA142073B4DC00250668 /* Assets.xcassets */; };
 		02C9AA182073B4DC00250668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C9AA162073B4DC00250668 /* LaunchScreen.storyboard */; };
 		02C9AA1B2073B4DC00250668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA1A2073B4DC00250668 /* main.m */; };
 		02C9AA252073B4DC00250668 /* UsersPostsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA242073B4DC00250668 /* UsersPostsTests.m */; };
 		02C9AA302073B4DC00250668 /* UsersPostsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA2F2073B4DC00250668 /* UsersPostsUITests.m */; };
+		02C9AA402073B5F100250668 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA3F2073B5F100250668 /* User.m */; };
+		02C9AA432073B66200250668 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA422073B66200250668 /* Address.m */; };
+		02C9AA462073B6CD00250668 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA452073B6CD00250668 /* Company.m */; };
+		02C9AA4A2073B92C00250668 /* UsersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA492073B92C00250668 /* UsersManager.m */; };
+		02C9AA552073BACD00250668 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA542073BACD00250668 /* NSData+JSON.m */; };
+		02C9AA582073BB9700250668 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA572073BB9700250668 /* NetworkManager.m */; };
+		02C9AA5C2073BECB00250668 /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA5B2073BECB00250668 /* UsersTableViewController.m */; };
+		02C9AA5F2073C06000250668 /* UsersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA5E2073C06000250668 /* UsersTableViewCell.m */; };
+		02C9AA622073D1EF00250668 /* UserPostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA612073D1EF00250668 /* UserPostsTableViewController.m */; };
+		02C9AA652073D31D00250668 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA642073D31D00250668 /* Post.m */; };
+		02C9AA682073D5B700250668 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C9AA672073D5B700250668 /* PostTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +48,6 @@
 		02C9AA082073B4DC00250668 /* UsersPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsersPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9AA0B2073B4DC00250668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		02C9AA0C2073B4DC00250668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		02C9AA0E2073B4DC00250668 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		02C9AA0F2073B4DC00250668 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		02C9AA122073B4DC00250668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02C9AA142073B4DC00250668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C9AA172073B4DC00250668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +59,29 @@
 		02C9AA2B2073B4DC00250668 /* UsersPostsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersPostsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9AA2F2073B4DC00250668 /* UsersPostsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersPostsUITests.m; sourceTree = "<group>"; };
 		02C9AA312073B4DC00250668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C9AA3E2073B5F100250668 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		02C9AA3F2073B5F100250668 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		02C9AA412073B66200250668 /* Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		02C9AA422073B66200250668 /* Address.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		02C9AA442073B6CD00250668 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		02C9AA452073B6CD00250668 /* Company.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		02C9AA482073B92C00250668 /* UsersManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersManager.h; sourceTree = "<group>"; };
+		02C9AA492073B92C00250668 /* UsersManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersManager.m; sourceTree = "<group>"; };
+		02C9AA532073BACD00250668 /* NSData+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JSON.h"; sourceTree = "<group>"; };
+		02C9AA542073BACD00250668 /* NSData+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JSON.m"; sourceTree = "<group>"; };
+		02C9AA562073BB9700250668 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		02C9AA572073BB9700250668 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		02C9AA5A2073BECB00250668 /* UsersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		02C9AA5B2073BECB00250668 /* UsersTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		02C9AA5D2073C06000250668 /* UsersTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersTableViewCell.h; sourceTree = "<group>"; };
+		02C9AA5E2073C06000250668 /* UsersTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewCell.m; sourceTree = "<group>"; };
+		02C9AA602073D1EF00250668 /* UserPostsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPostsTableViewController.h; sourceTree = "<group>"; };
+		02C9AA612073D1EF00250668 /* UserPostsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPostsTableViewController.m; sourceTree = "<group>"; };
+		02C9AA632073D31D00250668 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		02C9AA642073D31D00250668 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		02C9AA662073D5B700250668 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		02C9AA672073D5B700250668 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		02C9AA6B2073D8BF00250668 /* User+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+Internal.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +132,11 @@
 		02C9AA0A2073B4DC00250668 /* UsersPosts */ = {
 			isa = PBXGroup;
 			children = (
+				02C9AA3D2073B5DD00250668 /* Datamodel */,
+				02C9AA472073B85F00250668 /* Services */,
+				02C9AA592073BE6E00250668 /* UI */,
 				02C9AA0B2073B4DC00250668 /* AppDelegate.h */,
 				02C9AA0C2073B4DC00250668 /* AppDelegate.m */,
-				02C9AA0E2073B4DC00250668 /* ViewController.h */,
-				02C9AA0F2073B4DC00250668 /* ViewController.m */,
 				02C9AA112073B4DC00250668 /* Main.storyboard */,
 				02C9AA142073B4DC00250668 /* Assets.xcassets */,
 				02C9AA162073B4DC00250668 /* LaunchScreen.storyboard */,
@@ -130,6 +162,58 @@
 				02C9AA312073B4DC00250668 /* Info.plist */,
 			);
 			path = UsersPostsUITests;
+			sourceTree = "<group>";
+		};
+		02C9AA3D2073B5DD00250668 /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				02C9AA3E2073B5F100250668 /* User.h */,
+				02C9AA3F2073B5F100250668 /* User.m */,
+				02C9AA412073B66200250668 /* Address.h */,
+				02C9AA422073B66200250668 /* Address.m */,
+				02C9AA442073B6CD00250668 /* Company.h */,
+				02C9AA452073B6CD00250668 /* Company.m */,
+				02C9AA632073D31D00250668 /* Post.h */,
+				02C9AA642073D31D00250668 /* Post.m */,
+				02C9AA6B2073D8BF00250668 /* User+Internal.h */,
+			);
+			path = Datamodel;
+			sourceTree = "<group>";
+		};
+		02C9AA472073B85F00250668 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				02C9AA532073BACD00250668 /* NSData+JSON.h */,
+				02C9AA542073BACD00250668 /* NSData+JSON.m */,
+				02C9AA482073B92C00250668 /* UsersManager.h */,
+				02C9AA492073B92C00250668 /* UsersManager.m */,
+				02C9AA562073BB9700250668 /* NetworkManager.h */,
+				02C9AA572073BB9700250668 /* NetworkManager.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		02C9AA592073BE6E00250668 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				02C9AA6A2073D5C900250668 /* Cells */,
+				02C9AA5A2073BECB00250668 /* UsersTableViewController.h */,
+				02C9AA5B2073BECB00250668 /* UsersTableViewController.m */,
+				02C9AA602073D1EF00250668 /* UserPostsTableViewController.h */,
+				02C9AA612073D1EF00250668 /* UserPostsTableViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		02C9AA6A2073D5C900250668 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				02C9AA5D2073C06000250668 /* UsersTableViewCell.h */,
+				02C9AA5E2073C06000250668 /* UsersTableViewCell.m */,
+				02C9AA662073D5B700250668 /* PostTableViewCell.h */,
+				02C9AA672073D5B700250668 /* PostTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +349,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C9AA102073B4DC00250668 /* ViewController.m in Sources */,
+				02C9AA5F2073C06000250668 /* UsersTableViewCell.m in Sources */,
+				02C9AA682073D5B700250668 /* PostTableViewCell.m in Sources */,
+				02C9AA622073D1EF00250668 /* UserPostsTableViewController.m in Sources */,
+				02C9AA552073BACD00250668 /* NSData+JSON.m in Sources */,
+				02C9AA5C2073BECB00250668 /* UsersTableViewController.m in Sources */,
+				02C9AA402073B5F100250668 /* User.m in Sources */,
+				02C9AA462073B6CD00250668 /* Company.m in Sources */,
+				02C9AA4A2073B92C00250668 /* UsersManager.m in Sources */,
+				02C9AA652073D31D00250668 /* Post.m in Sources */,
 				02C9AA1B2073B4DC00250668 /* main.m in Sources */,
+				02C9AA432073B66200250668 /* Address.m in Sources */,
+				02C9AA582073BB9700250668 /* NetworkManager.m in Sources */,
 				02C9AA0D2073B4DC00250668 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
