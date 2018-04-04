@@ -11,6 +11,6 @@ You will also found UnitTest and UI Tests, that will check the code is working f
 
 
 
-* [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
-* [https://jsonplaceholder.typicode.com/posts?userId=](https://jsonplaceholder.typicode.com/posts?userId=)
-* [www.gravatar.com](www.gravatar.com)
+* <https://jsonplaceholder.typicode.com/users>
+* <https://jsonplaceholder.typicode.com/posts?userId=>
+* <https://www.gravatar.com>
