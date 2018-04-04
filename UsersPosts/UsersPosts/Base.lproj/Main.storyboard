@@ -44,7 +44,6 @@
                                     <subviews>
                                         <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NG3-U7-FcY">
                                             <rect key="frame" x="5" y="2.5" width="85" height="85"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="85" id="Hje-tm-mEN"/>
                                                 <constraint firstAttribute="width" secondItem="NG3-U7-FcY" secondAttribute="height" multiplier="1:1" id="mPo-6v-eDv"/>

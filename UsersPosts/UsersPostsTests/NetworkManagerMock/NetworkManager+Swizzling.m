@@ -65,9 +65,9 @@
         }
     }
     
-    if([url.absoluteString containsString:@"placehold.it"]){
+    if([url.absoluteString containsString:@"gravatar.com"]){
         // Return a fake image data for the asked size
-        NSString *readSize = [url.pathComponents objectAtIndex:1];
+        NSString *readSize = [self containsQueryItem:@"s" fromURL:url].value;
         CGSize size = CGSizeMake(readSize.intValue, readSize.intValue);
         UIGraphicsBeginImageContextWithOptions(size, NO, 1);
         CGContextRef context = UIGraphicsGetCurrentContext();
