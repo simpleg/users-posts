@@ -21,7 +21,6 @@
     self.tableView.tableFooterView = [UIView new];
     __weak typeof(self) weakSelf = self;
     [_userManager fetchPostsForUser:_user completionHandler:^(User *user, NSArray<Post *> *posts, NSError *error) {
-        NSLog(@"Fetch Posts done %@", posts);
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf.tableView reloadData];
         });

@@ -25,7 +25,6 @@
     __weak typeof(self) weakSelf = self;
     _usersManager = [UsersManager new];
     [_usersManager fetchUsersWithCompletionHandler:^(NSArray<User *> *users, NSError *error) {
-        NSLog(@"Users fetched %@ %@",users, error);
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf.tableView reloadData];
         });
