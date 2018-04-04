@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "UsersManager.h"
+#import "User+Internal.h"
 
 @interface UsersManagerTests : XCTestCase
 @property (nonatomic, strong) UsersManager *usersManager;
