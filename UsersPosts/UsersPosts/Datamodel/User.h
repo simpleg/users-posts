@@ -22,6 +22,4 @@
 @property (nonatomic, readonly, nonnull) Company *company;
 @property (nonatomic, readonly, nonnull) NSArray <Post *> * posts;
 @property (nonatomic, readonly, nonnull) NSData *avatarData;
-
-+(User * _Nonnull) createUserFromJson:(NSDictionary * _Nonnull) json;
 @end

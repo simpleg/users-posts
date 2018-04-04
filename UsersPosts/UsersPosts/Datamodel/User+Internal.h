@@ -8,6 +8,7 @@
 #import "User.h"
 
 @interface User (PrivateMethods)
--(void) addPost:(Post *) post;
--(void) addAvatarData:(NSData *) data;
+@property (nonatomic, readwrite, strong) NSData * _Nonnull avatarData;
+-(void) addPost:(Post *_Nonnull) post;
++(User * _Nonnull) createUserFromJson:(NSDictionary * _Nonnull) json;
 @end

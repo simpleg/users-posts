@@ -58,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0277918820750D5F006E8D46 /* Address+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Address+Internal.h"; sourceTree = "<group>"; };
+		0277918920750D98006E8D46 /* Company+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Company+Internal.h"; sourceTree = "<group>"; };
+		0277918A20750DC8006E8D46 /* Post+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Post+Internal.h"; sourceTree = "<group>"; };
 		02C9AA082073B4DC00250668 /* UsersPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsersPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C9AA0B2073B4DC00250668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		02C9AA0C2073B4DC00250668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -188,10 +191,13 @@
 				02C9AA6B2073D8BF00250668 /* User+Internal.h */,
 				02C9AA3E2073B5F100250668 /* User.h */,
 				02C9AA3F2073B5F100250668 /* User.m */,
+				0277918820750D5F006E8D46 /* Address+Internal.h */,
 				02C9AA412073B66200250668 /* Address.h */,
 				02C9AA422073B66200250668 /* Address.m */,
+				0277918920750D98006E8D46 /* Company+Internal.h */,
 				02C9AA442073B6CD00250668 /* Company.h */,
 				02C9AA452073B6CD00250668 /* Company.m */,
+				0277918A20750DC8006E8D46 /* Post+Internal.h */,
 				02C9AA632073D31D00250668 /* Post.h */,
 				02C9AA642073D31D00250668 /* Post.m */,
 			);

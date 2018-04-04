@@ -16,5 +16,4 @@
 @property (nonatomic, readonly, nonnull) NSString *zipCode;
 @property (nonatomic, readonly, nonnull) CLLocation *location;
 
-+(Address *_Nonnull) createAddressFromJson:(NSDictionary *_Nonnull) json;
 @end

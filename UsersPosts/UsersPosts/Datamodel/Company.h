@@ -12,5 +12,4 @@
 @property (nonatomic, readonly, nonnull) NSString *name;
 @property (nonatomic, readonly, nonnull) NSString *slogan;
 @property (nonatomic, readonly, nonnull) NSString *business;
-+(Company *_Nonnull) createCompanyFromJson:(NSDictionary *_Nonnull) json;
 @end

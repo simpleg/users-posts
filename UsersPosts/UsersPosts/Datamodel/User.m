@@ -8,6 +8,8 @@
 
 #import "User.h"
 #import "User+Internal.h"
+#import "Address+Internal.h"
+#import "Company+Internal.h"
 
 @interface User ()
 @property (nonatomic, readwrite, strong) NSString *userID;
@@ -45,6 +47,11 @@
     return user;
 }
 
+-(void) setAvatarData:(NSData *)avatarData{
+    _avatarData = nil;
+    _avatarData = [NSData dataWithData:avatarData];
+}
+
 -(NSArray <Post *> *) posts {
     return _userPosts.allObjects;
 }
@@ -55,7 +62,6 @@
 -(void) addPost:(Post *)post {
     [_userPosts addObject:post];
 }
--(void) addAvatarData:(NSData *) data {
-    _avatarData = [NSData dataWithData:data];
-}
+
+
 @end

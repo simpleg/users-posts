@@ -10,6 +10,7 @@
 #import "NSData+JSON.h"
 #import "NetworkManager.h"
 #import "User+Internal.h"
+#import "Post+Internal.h"
 
 @interface UsersManager ()
 @property (nonatomic, strong) NSMutableSet <User *> *usersList;
@@ -67,7 +68,7 @@
                 completionHandler(weakUser , nil, error);
             return;
         }
-        [weakUser addAvatarData:receivedData];
+        weakUser.avatarData = receivedData;
         if(completionHandler)
             completionHandler(weakUser,weakUser.avatarData,error);
     }];

@@ -12,6 +12,4 @@
 @property (nonatomic, readonly, nonnull) NSString *postID;
 @property (nonatomic, readonly, nonnull) NSString *title;
 @property (nonatomic, readonly, nonnull) NSString *body;
-
-+(Post *_Nonnull) createPostFromJson:(NSDictionary *_Nonnull) json;
 @end

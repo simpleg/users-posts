@@ -52,19 +52,6 @@
         }
     }
     
-    if([url.pathComponents containsObject:@"photos"]){
-        NSURLQueryItem *specificIdItem = [self containsQueryItem:@"id" fromURL:url];
-        NSString *specificId = specificIdItem.value;
-        NSData *data = [self dataForFileName:@"photos"];
-        NSArray *allPhotos = [data objectFromJSONData];
-        if(specificIdItem){
-            NSArray *filteredPhotos = [allPhotos filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(id == %ld)",specificId.longLongValue]];
-            dataToReturn = [NSData dataFromObject:filteredPhotos];
-        } else {
-            dataToReturn = data;
-        }
-    }
-    
     if([url.absoluteString containsString:@"gravatar.com"]){
         // Return a fake image data for the asked size
         NSString *readSize = [self containsQueryItem:@"s" fromURL:url].value;
